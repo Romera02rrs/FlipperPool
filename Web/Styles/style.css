@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid cornflowerblue; */
+}
+
+/** Header */
+
+header nav .menu{
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: right;
+    float: right;
+}
+
+header nav li{
+    background-color: darkcyan;
+    display: inline-block;
+}
+
+header video{
+    height: 50vw;
+    background-color: beige;
+}
+
+header h1 {
+    z-index: 99;
+}
+
