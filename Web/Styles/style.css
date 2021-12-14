@@ -8,10 +8,10 @@
 
 /** Header */
 
-header nav .menu{
+header nav{
     display: flex;
     justify-content: space-between;
-    z-index: 9;
+    float: center;
 }
 
 header nav ul{
@@ -34,3 +34,31 @@ header h1 {
     z-index: 99;
 }
 
+/** Secciones */
+
+.section-fluid{
+    margin-top: 100px;
+    background-color: rgb(143, 44, 44);
+}
+
+section {
+    margin-top: 100px;
+    padding: 8%;
+    background-color: red;
+}
+
+/** Sección 1 */
+
+body section:nth-child(2){
+
+    background-color: blue;
+}
+
+body section:nth-child(2) .img-proceso{
+
+    display: flexbox;
+    justify-content: space-between;
+    background-color: red;
+    height: 100px;
+    
+}
