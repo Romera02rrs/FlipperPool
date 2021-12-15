@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +14,32 @@
     <link href="Styles/style.css" rel="stylesheet" type="text/css">
     <title>FlipperPool</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <img class="logo" alt="#" src="#">
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>    
-        </nav>
-        <video></video>
-        <h1>Su Felicidad En Construcción</h1>
-        <h2>Tres generaciones de experiencia</h2>
-        <button>Galería</button>
-        <button>Contacto</button>
+        <video muted autoplay loop>
+            <source src="https://video.wixstatic.com/video/c837a6_ae4f4741c31844bfba715de2983231fd/1080p/mp4/file.mp4"
+                type="video/mp4">
+        </video>
+        <div id="overlay"></div>
+        <div id="content-header">
+            <nav>
+                <img class="logo" alt="Logo FlipperPool" src="Complements/Img/Social/Logo.png">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <hgroup>
+                <h1>Su Felicidad<br> En Construcción</h1>
+                <h2>Tres generaciones de experiencia</h2>
+            </hgroup>
+            <button>Galería</button>
+            <button>Contacto</button>
+        </div>
     </header>
     <section>
         <hgroup>
@@ -37,9 +47,9 @@
             <h3>Constructores de piscinas<br> a hormigón proyectado</h3>
         </hgroup>
         <div class="mosaico">
-            <div>Levantar</div>
-            <div>Guinitar</div>
-            <div>Alicatar</div>
+            <img alt="Levantar" src="Complements/Img/gunitar.jpg">
+            <img alt="Gunitar" src="Complements/Img/maquina.webp">
+            <img alt="Alicatar" src="Complements/Img/alicatar.webp">
         </div>
     </section>
     <section>
@@ -47,7 +57,7 @@
             <h4>La mayor calidad y durabilidad a su alcance</h4>
             <h3>Una larga experiencia<br> en el sector</h3>
         </hgroup>
-        <div></div>
+        <img alt="Planificación" src="Complements/Img/planificar.jpg">
     </section>
     <section>
         <!-- TODO: Cambiar textos del header -->
@@ -70,7 +80,9 @@
             <h3>Descubre lo que opinan<br> nuestros clientes</h3>
         </hgroup>
         <div>
-            <p>"Es una empresa familiar 100% recomendable y muy seria. La piscina es una pasada y con solo una semana la piscina estaba terminada. Si tuviera que hacer otra por supuesto que volvería  a contactar con ellos."</p>
+            <p>"Es una empresa familiar 100% recomendable y muy seria. La piscina es una pasada y con solo una semana la
+                piscina estaba terminada. Si tuviera que hacer otra por supuesto que volvería a contactar con ellos."
+            </p>
         </div>
     </section>
     <section>
@@ -78,26 +90,27 @@
             <h4>No se quede sin su piscina</h4>
             <h3>No dude en ponerse en contacto<br> Flipper Pool le espera</h3>
         </hgroup>
-        <img alt="#" src="#">>
+        <img alt="#" src="#">
         <img alt="#" src="#">
         <input type="email">
         <button>Contactar</button>
         <video></video>
     </section>
     <footer>
-       <hr>
-       <div>
+        <hr>
+        <div>
             <img class="logo" alt="#" src="#">
             <p>Privacidad</p>
-       </div>
-       <div>
+        </div>
+        <div>
             <p>Social</p>
             <img class="i" alt="#" src="#">>
             <img class="i" alt="#" src="#">>
-       </div>
-       <div>
+        </div>
+        <div>
             <p>Horario</p>
-            <p><time datetime="09:00">09:00</time> - <time datetime="21:00">21:00</time><p>
+            <p><time datetime="09:00">09:00</time> - <time datetime="21:00">21:00</time>
+            <p>
             <p>Fines de semana cerrado</p>
         </div>
         <div>
@@ -108,4 +121,5 @@
         <button>Contactar</button>
     </footer>
 </body>
+
 </html>

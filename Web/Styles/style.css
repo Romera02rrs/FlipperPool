@@ -19,133 +19,188 @@
     font-weight: lighter;
 }
 
-*{
+/* VARIABLES */
+
+:root {
+    --main-color: #8ccbff;
+
+    --main-padding-sides: 100px;
+
+    --padding-height-buttons: 25px;
+    --padding-width-buttnos: 100px;
+}
+
+/* ESTILOS GENERALES */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto-Regular;
-    /* border: 1px solid cornflowerblue; */
+    font-family: Roboto;
 }
 
-/** Header */
-
-header nav{
-    display: flex;
-    justify-content: space-between;
-    float: center;
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto-Light;
 }
 
-header nav ul{
-    display: flex;
-    justify-content: right;
-    float: right;
+button {
+    font-family: Roboto-Light;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    background-color: var(--main-color);
+    border: none;
 }
-
-header nav li{
-    background-color: darkcyan;
-    display: inline-block;
-}
-
-header video{
-    height: 50vw;
-    background-color: beige;
-}
-
-/** Secciones */
 
 section {
-    margin-top: 100px;
+    margin-top: 150px;
+    width: 100%;
     border: 1px solid red;
 }
 
-body section hgroup{
+section hgroup {
+    margin: 0 var(--main-padding-sides);
     color: #8ccbff;
     margin-bottom: 50px;
 }
 
-body section hgroup h4{
+section hgroup h4 {
     color: #000000;
     font-family: Roboto-Light;
     font-size: 20px;
 }
 
-body section hgroup h3{
+section hgroup h3 {
     font-family: Roboto-Bold;
     font-size: 35px;
 }
 
-/** Sección 1 */
-
-body section:nth-child(2) hgroup{
-    
-    padding-top: 8.5%;
-    padding-left: 10.5%;
+.logo {
+    height: 70px;
 }
 
-body section:nth-child(2) hgroup h3{
-  
-    font-size: 45px;
-    line-height: 50px;
-    margin-top: 15px;
+/* ----- HEADER ----- */
+
+header {
+    height: 100vh;
+    width: auto;
 }
 
-body section:nth-child(2) .mosaico{
+/* Vídeo */
+header video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
 
-    margin-top: 70px;
+#overlay {
+    height: 100vh;
+    width: 100%;
+    background: #0004;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Contenido del header */
+#content-header {
+    width: 100%;
+    margin-top: 50px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 3;
+    padding: 0 var(--main-padding-sides);
+}
+
+/* Logo header */
+header nav .logo {}
+
+/* Menú de navegación */
+header nav {
     display: flex;
     justify-content: space-between;
-    padding-left: 4%;
-    padding-right: 4%;
+    width: 100%;
+    color: #fff;
 }
 
-body section:nth-child(2) .mosaico div{
-    display: inline-block;
-    color: #ffff;
-    background-color: red;
-    height: 900px;
+header nav ul {
+    display: flex;
+    list-style: none;
+    background: #0005;
+    border: 1px solid var(--main-color);
+}
+
+header nav ul li {
+    padding: 25px 35px;
+}
+
+header nav ul li:hover {
+    background-color: #fff;
+}
+
+/** Titulos Principales */
+
+header hgroup {
+    margin-top: 160px;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: Roboto-Light;
+    font-size: 30px;
+}
+
+/* Botones */
+header button {
+    margin-top: 100px;
+}
+
+header button:nth-child(4) {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: 25px;
+}
+
+/* ----- SECCIÓN 1 ----- */
+
+.mosaico {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+.mosaico img {
+    height: 850px;
     width: 32.5%;
-    text-align: center;
-    padding-top: 10%;
-    font-size: 35px;
-    overflow: hidden;
-    font-family: Roboto-bold;
+    object-fit: cover;
 }
 
-body section:nth-child(2) .mosaico div:nth-child(1){
-    background-image: url("../Complements/Img/guinitar.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+/* ----- SECCIÓN 2 -----*/
+
+section:nth-child(3){
+
 }
 
-body section:nth-child(2) .mosaico div:nth-child(2){
-    background-image: url("../Complements/Img/levantar.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: 70%;
+section:nth-child(3) hgroup{
+    
 }
 
-body section:nth-child(2) .mosaico div:nth-child(3){
-    background-image: url("../Complements/Img/alicatar.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+section:nth-child(3) img {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
 }
 
-/** Sección 2 */
+/* ----- SECCIÓN 3 -----*/
 
-body section:nth-child(3) {
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
+section:nth-child(4){
 
-body section:nth-child(3) hgroup {
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-body section:nth-child(3) div{
-    padding-top: 8%;
-    padding-bottom: 8%;
-    width: 100vw;
-    height: 55vw;
-    background-image: url("../Complements/Img/planificacion.jpg");
 }
