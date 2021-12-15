@@ -25,12 +25,6 @@
     box-sizing: border-box;
     font-family: Roboto-Regular;
     /* border: 1px solid cornflowerblue; */
-    @font-face {
-        font-family: 'Open Sans';
-        src: url('fonts/OpenSans-Regular.ttf') format('truetype');
-        font-style: normal;
-        font-weight: normal;
-    }
 }
 
 /** Header */
@@ -57,10 +51,6 @@ header video{
     background-color: beige;
 }
 
-header h1 {
-    z-index: 99;
-}
-
 /** Secciones */
 
 section {
@@ -69,44 +59,51 @@ section {
 }
 
 body section hgroup{
-
     color: #8ccbff;
     margin-bottom: 50px;
 }
 
 body section hgroup h4{
-
     color: #000000;
     font-family: Roboto-Light;
     font-size: 20px;
 }
 
 body section hgroup h3{
-
     font-family: Roboto-Bold;
     font-size: 35px;
 }
 
 /** Sección 1 */
 
-body section:nth-child(2){
+body section:nth-child(2) hgroup{
+    
+    padding-top: 8.5%;
+    padding-left: 10.5%;
+}
 
-    padding: 8%;
+body section:nth-child(2) hgroup h3{
+  
+    font-size: 45px;
+    line-height: 50px;
+    margin-top: 15px;
 }
 
 body section:nth-child(2) .mosaico{
 
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 body section:nth-child(2) .mosaico div{
-
     display: inline-block;
     color: #ffff;
     background-color: red;
-    height: 800px;
-    width: 32%;
+    height: 900px;
+    width: 32.5%;
     text-align: center;
     padding-top: 10%;
     font-size: 35px;
@@ -115,21 +112,18 @@ body section:nth-child(2) .mosaico div{
 }
 
 body section:nth-child(2) .mosaico div:nth-child(1){
-
     background-image: url("../Complements/Img/ladrillos.jpg");
     background-repeat: no-repeat;
     background-size: 710%;
 }
 
 body section:nth-child(2) .mosaico div:nth-child(2){
-
-    background-image: url("../Complements/Img/hormigon.jpg");
+    background-image: url("../Complements/Img/guinitar.jpg");
     background-repeat: no-repeat;
     background-size: 710%;
 }
 
 body section:nth-child(2) .mosaico div:nth-child(3){
-
     background-image: url("../Complements/Img/gresite.jpg");
     background-repeat: no-repeat;
     background-size: 710%;
@@ -138,19 +132,16 @@ body section:nth-child(2) .mosaico div:nth-child(3){
 /** Sección 2 */
 
 body section:nth-child(3) {
-
     padding-top: 8%;
     padding-bottom: 8%;
 }
 
 body section:nth-child(3) hgroup {
-
     padding-top: 8%;
     padding-bottom: 8%;
 }
 
 body section:nth-child(3) div{
-
     padding-top: 8%;
     padding-bottom: 8%;
     width: 100vw;
