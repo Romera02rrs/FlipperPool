@@ -112,21 +112,22 @@ body section:nth-child(2) .mosaico div{
 }
 
 body section:nth-child(2) .mosaico div:nth-child(1){
-    background-image: url("../Complements/Img/ladrillos.jpg");
+    background-image: url("../Complements/Img/guinitar.jpg");
     background-repeat: no-repeat;
-    background-size: 710%;
+    background-size: auto 100%;
 }
 
 body section:nth-child(2) .mosaico div:nth-child(2){
-    background-image: url("../Complements/Img/guinitar.jpg");
+    background-image: url("../Complements/Img/levantar.jpg");
     background-repeat: no-repeat;
-    background-size: 710%;
+    background-size: auto 100%;
+    background-position: 70%;
 }
 
 body section:nth-child(2) .mosaico div:nth-child(3){
-    background-image: url("../Complements/Img/gresite.jpg");
+    background-image: url("../Complements/Img/alicatar.jpg");
     background-repeat: no-repeat;
-    background-size: 710%;
+    background-size: auto 100%;
 }
 
 /** Sección 2 */
