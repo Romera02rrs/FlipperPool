@@ -25,6 +25,7 @@
     --main-color: #8ccbff;
 
     --main-padding-sides: 100px;
+    --second-padding-sides: 50px;
 
     --padding-height-buttons: 25px;
     --padding-width-buttnos: 100px;
@@ -36,7 +37,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: Roboto-Regular;
 }
 
 a {
@@ -74,7 +75,7 @@ section hgroup h4 {
 
 section hgroup h3 {
     font-family: Roboto-Bold;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .logo {
@@ -97,6 +98,8 @@ header video {
 }
 
 #overlay {
+    right: 0;
+    bottom: 0;
     height: 100vh;
     width: 100%;
     background: #0004;
@@ -171,13 +174,13 @@ header button:nth-child(4) {
 
 /* ----- SECCIÓN 1 ----- */
 
-.mosaico {
+section:nth-child(2) .mosaico {
     display: flex;
     justify-content: space-between;
-    margin: 0 50px;
+    margin: 0 var(--second-padding-sides);
 }
 
-.mosaico img {
+section:nth-child(2) .mosaico img {
     height: 850px;
     width: 32.5%;
     object-fit: cover;
@@ -185,12 +188,13 @@ header button:nth-child(4) {
 
 /* ----- SECCIÓN 2 -----*/
 
-section:nth-child(3){
-
+section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
 }
 
-section:nth-child(3) hgroup{
-    
+section:nth-child(3) hgroup {
+    text-align: right;
 }
 
 section:nth-child(3) img {
@@ -201,6 +205,54 @@ section:nth-child(3) img {
 
 /* ----- SECCIÓN 3 -----*/
 
-section:nth-child(4){
+section:nth-child(4) .mosaico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 var(--second-padding-sides);
+
+}
+
+section:nth-child(4) .mosaico img {
+
+    padding: 10px 10px;
+    height: 300px;
+}
+
+section:nth-child(4) .mosaico img:nth-child(1) {
+
+    width: 50%;
+    object-fit: cover;
+}
+
+section:nth-child(4) .mosaico img:nth-child(2) {
+
+    width: 20%;
+    object-fit: cover;
+
+}
+
+section:nth-child(4) .mosaico img:nth-child(3) {
+
+    width: 30%;
+    object-fit: cover;
+
+}
+
+section:nth-child(4) .mosaico img:nth-child(4) {
+    width: 20%;
+    object-fit: cover;
+
+}
+
+section:nth-child(4) .mosaico img:nth-child(5) {
+    width: 40%;
+    object-fit: cover;
+
+}
+
+section:nth-child(4) .mosaico img:nth-child(6) {
+    width: 40%;
+    object-fit: cover;
 
 }
