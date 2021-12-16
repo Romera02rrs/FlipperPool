@@ -24,7 +24,8 @@
         <div id="overlay"></div>
         <div id="content-header">
             <nav>
-                <a href="inicio.html"><img class="logo" alt="Logo FlipperPool" src="Complements/Img/Social/Logo.png"></a>
+                <a href="inicio.html"><img class="logo" alt="Logo FlipperPool"
+                        src="Complements/Img/Social/Logo.png"></a>
                 <ul>
                     <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="empresa.html">Empresa</a></li>
@@ -79,12 +80,14 @@
             <h4>Siempre contentos con nuestro servicio</h4>
             <h3>Descubre lo que opinan<br> nuestros clientes</h3>
         </hgroup>
-        <div>
+        <div class="opiniones">
+            <svg viewBox="0 0 21 41">
+                <path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+            </svg>
             <p>"Es una empresa familiar 100% recomendable y muy seria. La piscina es una pasada y con solo una semana la
                 piscina estaba terminada. Si tuviera que hacer otra por supuesto que volvería a contactar con ellos."
-            </p>
-            <img src="Complements/Img/flecha.png">
-            <p>Roman Yagues Crespo</p>
+            <br><span class="autor">Roman Yagues Crespo</span></p>
+            <svg viewBox="0 0 21 41"><path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path></svg>
         </div>
     </section>
     <section>
@@ -92,22 +95,29 @@
             <h4>No se quede sin su piscina</h4>
             <h3>No dude en ponerse en contacto<br> Flipper Pool le espera</h3>
         </hgroup>
-        <img alt="#" src="#">
-        <img alt="#" src="#">
-        <input type="email">
-        <button>Contactar</button>
-        <video></video>
+        <div class="contenedor">
+            <div class="contenido">
+                <input type="email">
+                <button>Contactar</button>
+                <video muted autoplay loop>
+                    <source src="https://video.wixstatic.com/video/11062b_06ba851b8adf4d11816ea8b9bb9b5398/1080p/mp4/file.mp4">
+                </video>
+            </div>
+            <div class="mosaico">
+                <img alt="Excavadora" src="Complements/Img/excavadora.jpg">
+                <img alt="Varillas" src="Complements/Img/varilla.jpg">
+            </div>
+        </div>
     </section>
     <footer>
         <hr>
         <div>
-            <img class="logo" alt="#" src="#">
-            <p>Privacidad</p>
+            <img class="logo" alt="Logo FlipperPool" src="Complements/Img/Social/Logo.png">
         </div>
         <div>
             <p>Social</p>
-            <img class="i" alt="#" src="#">>
-            <img class="i" alt="#" src="#">>
+            <img class="icon" alt="Icono Facebook" src="Complements/Img/Social/Facebook.png">
+            <img class="icon" alt="Icono Instagram" src="Complements/Img/Social/Instagram.png">
         </div>
         <div>
             <p>Horario</p>
@@ -117,10 +127,13 @@
         </div>
         <div>
             <p>Información</p>
-            <address>info@flipperpool.com</address>
-            <address>661-260-491</address>
+            <p><address>info@flipperpool.com</address></p>
+            <p><address>661-260-491</address></p>
         </div>
-        <button>Contactar</button>
+        <div class="contenedor-botones">
+            <button>Privacidad</button>
+            <button>Contactar</button>
+        </div>
     </footer>
 </body>
 

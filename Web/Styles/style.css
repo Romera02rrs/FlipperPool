@@ -63,7 +63,7 @@ section {
 
 section hgroup {
     margin: 0 var(--main-padding-sides);
-    color: #8ccbff;
+    color: var(--main-color);
     margin-bottom: 50px;
 }
 
@@ -80,6 +80,10 @@ section hgroup h3 {
 
 .logo {
     height: 70px;
+}
+
+.icon {
+    height: 40px;
 }
 
 /* ----- HEADER ----- */
@@ -258,40 +262,158 @@ section:nth-child(4) .mosaico img:nth-child(6) {
 
 /* ----- SECCIÓN 4 -----*/
 
+section:nth-child(5) hgroup {
+    text-align: right;
+}
+
 /* Div */
-section:nth-child(5) div{
+.opiniones {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--main-color);
     height: 80vh;
     width: 100%;
-    padding: 200px;
+    padding: var(--second-padding-sides);
     align-items: center;
 }
 
+/* Flecha izquierda */
+section:nth-child(5) svg:nth-child(1) {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.5px;
+    width: 3%;
+}
+
 /* Reseña */
-section:nth-child(5) p:nth-child(1) {
-    width: 80%;
+section:nth-child(5) p:nth-child(2) {
+    padding: 0 100px;
+    display: inline-block;
+    width: 94%;
     text-align: center;
     font-family: Roboto-Bold;
     color: #fff;
     font-size: 35px;
 }
 
-/* Flecha */
-section:nth-child(5) svg:nth-child(1) {
-    width: 50px;
-    height: 50px;
-    width: 1%;
-    
+/* Flecha derecha */
+section:nth-child(5) svg:nth-child(3) {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.5px;
+    width: 3%;
+    transform: rotate(-180deg);
+
+}
+
+section:nth-child(5) svg:hover {
+    fill: #000;
+    stroke: #000;
 }
 
 /* Autor */
-section:nth-child(5) p:nth-child(2) {
-    margin-top: 40px;
+.autor {
+    line-height: 150px;
     width: 100%;
     text-align: center;
     font-family: Roboto-Regular;
     color: #fff;
     font-size: 20px;
+}
+
+/* ----- SECCIÓN 5 -----*/
+
+section:nth-child(6) {}
+
+/* Div que englosa todo el contenido */
+section:nth-child(6) .contenedor {
+    display: flex;
+    height: 80vh;
+}
+
+/* Div que englosa todo menos las imágenes*/
+section:nth-child(6) .contenido {
+
+    padding: var(--main-padding-sides);
+    width: 70%;
+}
+
+section:nth-child(6) .contenido input {
+
+    border: 2px solid var(--main-color);
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    font-family: Roboto-Light;
+    padding-left: 10px;
+}
+
+section:nth-child(6) .contenido button {
+
+    width: 23%;
+    margin-left: 30px;
+}
+
+section:nth-child(6) .contenido video {
+
+    border: 3px solid var(--main-color);
+    /* border-radius: 50px; */
+    margin-top: 50px;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Div que englosa las imágenes */
+section:nth-child(6) .mosaico {
+
+    width: 30%;
+}
+
+section:nth-child(6) .mosaico img {
+
+    position: absolute;
+    height: 61%;
+    width: 26%;
+    max-height: 500px;
+    max-width: 300px;
+    object-fit: cover;
+    border: 3px solid var(--main-color);
+    /* border-radius: 50px; */
+}
+
+section:nth-child(6) .mosaico img:first-child {
+
+    transform: translatex(-50px) translatey(50px);
+    z-index: 1;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    display: flex;
+    padding: 50px var(--main-padding-sides);
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: space-between;
+    color: ;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div p, button {
+    margin: 10px;
+}
+
+footer button {
+    border: 1px solid;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+
+}
+
+footer div:nth-child(3) p {
+    text-align: center;
 }
