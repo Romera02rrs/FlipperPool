@@ -334,7 +334,7 @@ section:nth-child(6) .contenedor {
 /* Div que englosa todo menos las imágenes*/
 section:nth-child(6) .contenido {
 
-    padding: var(--main-padding-sides);
+    padding: 0 var(--main-padding-sides);
     width: 70%;
 }
 
@@ -350,8 +350,8 @@ section:nth-child(6) .contenido input {
 
 section:nth-child(6) .contenido button {
 
-    width: 23%;
-    margin-left: 30px;
+    width: 22%;
+    margin-left: 25px;
 }
 
 section:nth-child(6) .contenido video {
@@ -359,7 +359,7 @@ section:nth-child(6) .contenido video {
     border: 3px solid var(--main-color);
     /* border-radius: 50px; */
     margin-top: 50px;
-    width: 80%;
+    width: 70%;
     max-width: 700px;
 }
 
@@ -377,12 +377,12 @@ section:nth-child(6) .mosaico img {
     max-height: 500px;
     max-width: 300px;
     object-fit: cover;
-    border: 3px solid var(--main-color);
     /* border-radius: 50px; */
 }
 
 section:nth-child(6) .mosaico img:first-child {
 
+    border: 3px solid var(--main-color);
     transform: translatex(-50px) translatey(50px);
     z-index: 1;
 }
@@ -395,15 +395,19 @@ footer {
     background-color: var(--main-color);
     align-items: center;
     justify-content: space-between;
-    color: ;
 }
 
 footer div {
     text-align: center;
 }
 
-footer div p, button {
+footer div p, button, h5{
     margin: 10px;
+}
+
+footer h5 {
+    font-family: Roboto-Bold;
+    font-size: 16px;
 }
 
 footer button {
