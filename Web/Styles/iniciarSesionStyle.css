@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../Complements/Fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../Complements/Fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../Complements/Fonts/Roboto-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: lighter;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto-Bold;
+}
+
+.first-row {
+    height: 100vh;
+}
+
+.gradiente {
+    background-image: radial-gradient(circle at 43.84% -20.44%, #4f5b50 0, #455549 16.67%, #374c3f 33.33%, #244134 50%, #0e362a 66.67%, #002d24 83.33%, #002820 100%);
+}
+
+.plantas {
+    background-image: url("../Complements/Img/IniciarSesion/plantas.jpg");
+    object-fit: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.login-form {
+    color: #fff;
+    position: absolute;
+    height: 70vh;
+    width: 30vw;
+    background-image: radial-gradient(circle at 43.84% -20.44%, #677b69 0, #5c7463 16.67%, #4c6b59 33.33%, #375f4e 50%, #1f5344 66.67%, #004a3e 83.33%, #00443b 100%);
+    margin-top: 10%;
+    margin-left: 20%;
+    border-radius: 5px;
+    box-shadow: 30px 16px 10px rgba(0, 0, 0, 0.5);
+    padding: 35px;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.iniciar-sesion {
+    justify-content: center;
+}
+
+.credenciales {
+    align-items: center;
+    margin-top: 100px;
+}
+
+.credenciales div {
+    margin: 30px 0;
+}
+
+input {
+    margin-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+    border: none;
+    background-color: #79a88e;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+button {
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #79a88e;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+}
