@@ -1,3 +1,11 @@
+<!-- TODO: 
+    · :hover de todods los botones.
+    · Efecto Parallax en el header.
+    · Efecto Parrallax en la imágen de la segunda sección y completar contenido.
+    · Título descriptivo en cada imágen del mosaico de la primera sección.
+    · Efecto en el mosaico de movimiento de ambas filas y sentidos contrarios (sección 3).
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,18 +13,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Descripción de la web y keywords-->
+    <!-- TODO: Descripción de la web y keywords -->
     <meta name="description" content="Descripción de la web">
     <meta name="keywords" content="">
     <meta name="author" content="Rubén Romera Sánchez">
     <meta name="copyright" content="Rubén Romera Sánchez">
+    <link href="Styles/mainStyle.css" rel="stylesheet" type="text/css">
     <link href="Styles/template_grid.css" rel="stylesheet" type="text/css">
-    <link href="Styles/style.css" rel="stylesheet" type="text/css">
+    <link href="Styles/inicioStyle.css" rel="stylesheet" type="text/css">
     <title>FlipperPool</title>
 </head>
 
 <body>
-    <header>
+    <header class="header-inicio">
         <video muted autoplay loop>
             <source src="https://video.wixstatic.com/video/c837a6_ae4f4741c31844bfba715de2983231fd/1080p/mp4/file.mp4"
                 type="video/mp4">
@@ -27,6 +36,7 @@
                 <a href="inicio.html"><img class="logo" alt="Logo FlipperPool"
                         src="Complements/Img/Social/Logo.png"></a>
                 <ul>
+                    <!-- TODO: Botones no clican correctamente -->
                     <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="empresa.html">Empresa</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
@@ -48,9 +58,9 @@
             <h3>Constructores de piscinas<br> a hormigón proyectado</h3>
         </hgroup>
         <div class="mosaico">
-            <img alt="Levantar" src="Complements/Img/gunitar.jpg">
-            <img alt="Gunitar" src="Complements/Img/maquina.webp">
-            <img alt="Alicatar" src="Complements/Img/alicatar.webp">
+            <img alt="Levantar" src="Complements/Img/Inicio/gunitar.jpg">
+            <img alt="Gunitar" src="Complements/Img/Inicio/maquina.webp">
+            <img alt="Alicatar" src="Complements/Img/Inicio/alicatar.webp">
         </div>
     </section>
     <section>
@@ -58,7 +68,7 @@
             <h4>La mayor calidad y durabilidad a su alcance</h4>
             <h3>Una larga experiencia<br> en el sector</h3>
         </hgroup>
-        <img alt="Planificación" src="Complements/Img/planificar.jpg">
+        <img alt="Planificación" src="Complements/Img/Inicio/planificar.jpg">
     </section>
     <section>
         <!-- TODO: Cambiar textos del header -->
@@ -67,12 +77,12 @@
             <h3>Un amplio historial<br> de ejemplos</h3>
         </hgroup>
         <div class="mosaico">
-            <img alt="#" src="Complements/Img/mosaico/01.jpg">
-            <img alt="#" src="Complements/Img/mosaico/02.jpg">
-            <img alt="#" src="Complements/Img/mosaico/03.jpg">
-            <img alt="#" src="Complements/Img/mosaico/04.jpg">
-            <img alt="#" src="Complements/Img/mosaico/05.jpg">
-            <img alt="#" src="Complements/Img/mosaico/06.jpg">
+            <img alt="#" src="Complements/Img/Inicio/mosaico/01.jpg">
+            <img alt="#" src="Complements/Img/Inicio/mosaico/02.jpg">
+            <img alt="#" src="Complements/Img/Inicio/mosaico/03.jpg">
+            <img alt="#" src="Complements/Img/Inicio/mosaico/04.jpg">
+            <img alt="#" src="Complements/Img/Inicio/mosaico/05.jpg">
+            <img alt="#" src="Complements/Img/Inicio/mosaico/06.jpg">
         </div>
     </section>
     <section>
@@ -86,8 +96,11 @@
             </svg>
             <p>"Es una empresa familiar 100% recomendable y muy seria. La piscina es una pasada y con solo una semana la
                 piscina estaba terminada. Si tuviera que hacer otra por supuesto que volvería a contactar con ellos."
-            <br><span class="autor">Roman Yagues Crespo</span></p>
-            <svg viewBox="0 0 21 41"><path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path></svg>
+                <br><span class="autor">Roman Yagues Crespo</span>
+            </p>
+            <svg viewBox="0 0 21 41">
+                <path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+            </svg>
         </div>
     </section>
     <section>
@@ -100,41 +113,48 @@
                 <input type="email">
                 <button>Contactar</button>
                 <video muted autoplay loop>
-                    <source src="https://video.wixstatic.com/video/11062b_06ba851b8adf4d11816ea8b9bb9b5398/1080p/mp4/file.mp4">
+                    <source
+                        src="https://video.wixstatic.com/video/11062b_06ba851b8adf4d11816ea8b9bb9b5398/1080p/mp4/file.mp4">
                 </video>
             </div>
             <div class="mosaico">
-                <img alt="Excavadora" src="Complements/Img/excavadora.jpg">
-                <img alt="Varillas" src="Complements/Img/varilla.jpg">
+                <img alt="Excavadora" src="Complements/Img/Inicio/excavadora.jpg">
+                <img alt="Varillas" src="Complements/Img/Inicio/varilla.jpg">
             </div>
         </div>
     </section>
-    <footer>
-        <hr>
-        <div>
-            <img class="logo" alt="Logo FlipperPool" src="Complements/Img/Social/Logo.png">
-        </div>
-        <div>
-            <h5>Social</h5>
-            <img class="icon" alt="Icono Facebook" src="Complements/Img/Social/Facebook.png">
-            <img class="icon" alt="Icono Instagram" src="Complements/Img/Social/Instagram.png">
-        </div>
-        <div>
-            <h5>Horario</h5>
-            <p><time datetime="09:00">09:00</time> - <time datetime="21:00">21:00</time>
-            <p>
-            <p>Fines de semana cerrado</p>
-        </div>
-        <div>
-            <h5>Información</h5>
-            <p><address>info@flipperpool.com</address></p>
-            <p><address>661-260-491</address></p>
-        </div>
-        <div class="contenedor-botones">
-            <button>Privacidad</button>
-            <button>Contactar</button>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <img class="logo" alt="Logo FlipperPool" src="Complements/Img/Social/Logo.png">
+            </div>
+            <div class="col-2">
+                <h5>Social</h5>
+                <img class="icon" alt="Icono Facebook" src="Complements/Img/Social/Facebook.png">
+                <img class="icon" alt="Icono Instagram" src="Complements/Img/Social/Instagram.png">
+            </div>
+            <div class="col-3">
+                <h5>Horario</h5>
+                <p><time datetime="09:00">09:00</time> - <time datetime="21:00">21:00</time>
+                <p>
+                <p>Fines de semana cerrado</p>
+            </div>
+            <div class="col-2">
+                <h5>Información</h5>
+                <p>
+                <address>info@flipperpool.com</address>
+                </p>
+                <p>
+                <address>661-260-491</address>
+                </p>
+            </div>
+            <div class="col-4 contenedor-botones">
+                <button>Privacidad</button>
+                <button>Contactar</button>
+            </div>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,8 @@
+header {
+    height: 70vh;
+    background: fixed;
+    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
+    background-size: 100%;
+    object-fit: cover;
+}
+

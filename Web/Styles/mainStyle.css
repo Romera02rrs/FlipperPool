@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../Complements/Fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../Complements/Fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../Complements/Fonts/Roboto-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: lighter;
+}
+
+/* VARIABLES */
+
+:root {
+    --main-color: #8ccbff;
+
+    --main-padding-sides: 100px;
+    --second-padding-sides: 50px;
+}
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto-Light;
+}
+
+button {
+    font-family: Roboto-Light;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    background-color: var(--main-color);
+    border: none;
+}
+
+section {
+    margin-top: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+section hgroup {
+    margin: 0 var(--main-padding-sides);
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+section hgroup h4 {
+    color: #000000;
+    font-family: Roboto-Light;
+    font-size: 20px;
+}
+
+section hgroup h3 {
+    font-family: Roboto-Bold;
+    font-size: 40px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.icon {
+    height: 40px;
+}
+
+/* ----- HEADER -----*/
+
+header {
+    height: 100vh;
+    width: auto;
+}
+
+/* Vídeo */
+header video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#overlay {
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background: #0004;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Contenido del header */
+#content-header {
+    width: 100%;
+    margin-top: 50px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 3;
+    padding: 0 var(--main-padding-sides);
+}
+
+/* Logo header */
+header nav .logo {}
+
+/* Menú de navegación */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    background: #0005;
+    border: 1px solid var(--main-color);
+}
+
+header nav ul li {
+    padding: 25px 35px;
+}
+
+header nav ul li:hover {
+    background-color: #fff;
+}
+
+
+/* ----- FOOTER ----- */
+
+footer {
+    padding: 50px var(--main-padding-sides);
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div p, button, h5{
+    margin: 10px;
+}
+
+footer h5 {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+}
+
+footer button {
+    border: 1px solid;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+footer div:nth-child(3) p {
+    text-align: center;
+}
