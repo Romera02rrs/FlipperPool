@@ -45,13 +45,37 @@
 /* ----- SECCIÓN 2 ----- */
 .seccion-2{
     background-color: var(--main-color);
-    height: 100px;
+    height: 200vh;
+}
+
+.seccion-2 hgroup {
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-2 .imagenes{
+    padding: 0px;
 }
 
 .seccion-2 .imagen-1{
     background-image: url("../Complements/Img/Empresa/pala.jpg");
-    height: 70vh;
+    width: 70vw;
+    height: 70vw;
+    background-size: 200%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.seccion-2 .imagen-2{
+    width: 70vw;
+    height: 70vw;
+    background-image: url("../Complements/Img/Empresa/batidora.jpg");
     background-size: 100%;
     object-fit: cover;
     background-repeat: no-repeat;
+    transform: translatex(360px) translatey(150px);
+
 }
