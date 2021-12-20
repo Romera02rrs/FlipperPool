@@ -43,15 +43,6 @@ a {
     font-family: Roboto-Light;
 }
 
-button {
-    font-family: Roboto-Light;
-    font-size: 20px;
-    height: 60px;
-    width: 200px;
-    background-color: var(--main-color);
-    border: none;
-}
-
 section {
     margin-top: 150px;
     width: 100%;
@@ -79,41 +70,29 @@ section hgroup h3 {
     height: 70px;
 }
 
-.icon {
-    height: 40px;
-}
+/* ----- Header ----- */
 
-/* ----- HEADER -----*/
 
 header {
     height: 100vh;
-    width: auto;
+    background-color: var(--main-color);
+    text-align: center;
 }
 
-/* Vídeo */
-header video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-#overlay {
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    background: #0004;
-    position: absolute;
-    z-index: 2;
+.prueba {
+    background: fixed;
+    background-image: url("../Complements/Img/Empresa/pala.jpg");
+    background-size: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    /* margin-left: 15%;
+    margin-right: 15%; */
 }
 
 /* Contenido del header */
-#content-header {
-    width: 100%;
+.content-header {
     margin-top: 50px;
     color: #ffffff;
-    position: absolute;
     z-index: 3;
     padding: 0 var(--main-padding-sides);
 }
@@ -122,58 +101,42 @@ header video {
 header nav .logo {}
 
 /* Menú de navegación */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    color: #fff;
+header nav .row{
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 header nav ul {
-    display: flex;
     list-style: none;
     background: #0005;
     border: 1px solid var(--main-color);
 }
 
 header nav ul li {
-    padding: 25px 35px;
+    width: 100%;
 }
 
 header nav ul li:hover {
     background-color: #fff;
 }
 
+/* Titulo Header */
 
-/* ----- FOOTER ----- */
-
-footer {
-    padding: 50px var(--main-padding-sides);
-    background-color: var(--main-color);
-    align-items: center;
-    justify-content: space-between;
+.titulo {
+    display: block;
+    margin-top: 60px;
+    justify-content: center;
 }
 
-footer div {
-    text-align: center;
+header h1 {
+    display: block;
+    color: #fff;
+    font-size: 80px;
 }
 
-footer div p, button, h5{
-    margin: 10px;
-}
-
-footer h5 {
-    font-family: Roboto-Bold;
-    font-size: 16px;
-}
-
-footer button {
-    border: 1px solid;
-    padding: 10px;
-    width: 100%;
-    height: 50%;
-}
-
-footer div:nth-child(3) p {
-    text-align: center;
+header h2 {
+    line-height: 50px;
+    font-family: Roboto-Light;
+    display: block;
+    font-size: 30px;
 }

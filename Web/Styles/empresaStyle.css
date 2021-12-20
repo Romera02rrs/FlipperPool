@@ -1,8 +1,57 @@
-header {
-    height: 70vh;
-    background: fixed;
-    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
-    background-size: 100%;
-    object-fit: cover;
+/* ----- SECCIÓN 1 ----- */
+
+.seccion-1 div {
+    padding: 0px;
 }
 
+.seccion-1 .imagen-1{
+
+    background-image: url("../Complements/Img/Empresa/cascos.jpg");
+    background-size: 200%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border: 3px solid var(--main-color);
+
+}
+
+.seccion-1 .imagen-2{
+
+    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
+    background-size: 200%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border: 3px solid var(--main-color);
+
+}
+
+.seccion-1 .imagen-3{
+
+    background-image: url("../Complements/Img/Empresa/batidora.jpg");
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border: 3px solid var(--main-color);
+}
+
+.seccion-1 .texto, h3 {
+    padding: 30px;
+    text-align: center;
+
+}
+
+/* ----- SECCIÓN 2 ----- */
+.seccion-2{
+    background-color: var(--main-color);
+    height: 100px;
+}
+
+.seccion-2 .imagen-1{
+    background-image: url("../Complements/Img/Empresa/pala.jpg");
+    height: 70vh;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
