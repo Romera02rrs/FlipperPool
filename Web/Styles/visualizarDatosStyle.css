@@ -1,0 +1,33 @@
+.contenido-global {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(56,56,212,1) 45%, rgba(0,212,255,0.8323530095632002) 94%);
+}
+
+.primera-fila {
+    background-color: #0005;
+    width: 100vw;
+    height: 50vh;
+}
+
+.dato-1 {
+    background-color: aliceblue;
+}
+
+.dato-2 {
+    background-color: aquamarine;
+}
+
+.segunda-fila  {
+    background-color: #fff5;
+    width: 100vw;
+    height: 50vh;
+}
+
+.dato-3 {
+    background-color: violet;
+}
+
+.dato-4 {
+    background-color: yellowgreen;
+}
