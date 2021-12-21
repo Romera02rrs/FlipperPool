@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Styles/mainStyle.css" rel="stylesheet" type="text/css">
     <link href="Styles/template_grid.css" rel="stylesheet" type="text/css">
+    <link href="Styles/mainStyle.css" rel="stylesheet" type="text/css">
     <link href="Styles/iniciarSesionStyle.css" rel="stylesheet" type="text/css">
     <title>Iniciar Sesión</title>
 </head>
@@ -14,22 +14,24 @@
         <div class="row first-row">
             <div class="col-5 gradiente"></div>
             <div class="container login-form">
-                <div class="row iniciar-sesion">
-                    <h1>Iniciar Sesión</h1>
-                </div>
-                <div class="credenciales">
-                    <div class="row"> 
-                        <h2>Usuario</h2>
-                        <input type="email">
+                <form action="iniciarSesion.html">
+                    <div class="row iniciar-sesion">
+                        <label for="correo"><h1>Iniciar Sesión</h1></label>
                     </div>
-                    <div class="row"> 
-                        <h2>Constraseña</h2>
-                        <input type="password">
+                    <div class="credenciales">
+                        <div class="row"> 
+                            <label for="correo"><h2>Usuario</h2></label>
+                            <input type="email" id="correo">
+                        </div>
+                        <div class="row"> 
+                            <label for="clave"><h2>Constraseña</h2></label>
+                            <input type="password" id="clave">
+                        </div>
+                        <div class="row">
+                            <button type="submit">Enviar</button>
+                        </div>
                     </div>
-                    <div class="row">
-                        <button>Enviar</button>
-                    </div>
-                </div>
+                </form>
             </div>
             <div class="col-7 plantas"></div>
         </div>

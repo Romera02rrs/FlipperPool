@@ -1,0 +1,85 @@
+.formularioCol {
+    background-color: blanchedalmond;
+    height: 100vh;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.logo {
+    margin: 50px;
+}
+
+.formulario {
+    padding: 30px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    box-shadow: 30px 16px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: Roboto-Bold;
+    color: #fff;
+    padding: 5px;
+}
+
+.contenido-formulario{
+    color: #fff;
+    flex-direction: column;
+    padding: 5px;
+}
+
+label {
+    padding: 5px;
+    text-align: left;
+    font-size: 16px;
+}
+
+input, button {
+    border-radius: 3px;
+    background-color: #b8dfff;
+    border: 1px solid #fff;
+    padding-left: 5px;
+}
+
+button {
+    margin-top: 10px;
+    width: 25%;
+    padding: 5px;
+    width: 30%;
+}
+
+/* ----- DATOS ----- */
+
+.datosCol {
+    padding: 50px;
+}
+
+.datos {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: scroll;
+    max-height: 80vh;
+    box-shadow: 30px 16px 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    padding: 35px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #4597da;
+}
+
+table th, td {
+    padding: 10px;
+    border: 1px solid;
+}
+
+tr:hover {background-color: yellow;}
+
+tr:nth-child(even) {background-color: #c2e3ff;} 
