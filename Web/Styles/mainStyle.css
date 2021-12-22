@@ -73,18 +73,19 @@ section hgroup h3 {
 /* ----- Header ----- */
 
 
-header {
+
+
+header img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
     height: 100vh;
-    background-color: var(--main-color);
-    text-align: center;
+    width: auto;
 }
 
 .prueba {
-    background: fixed;
-    background-image: url("../Complements/Img/Empresa/pala.jpg");
-    background-size: 100%;
-    height: 70vh;
-    background-repeat: no-repeat;
+    
     /* margin-left: 15%;
     margin-right: 15%; */
 }
@@ -93,7 +94,7 @@ header {
 .content-header {
     margin-top: 50px;
     color: #ffffff;
-    z-index: 3;
+    z-index: 2;
     padding: 0 var(--main-padding-sides);
 }
 
