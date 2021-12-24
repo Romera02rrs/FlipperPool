@@ -44,12 +44,12 @@ a {
 }
 
 header {
-    height: 100vh;
+    height: 80vh;
     background-color: var(--main-color);   
 }
 
 .fondo {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
 
@@ -59,8 +59,10 @@ header {
     z-index: 1;
 }
 
-.fondo img {
-    position: fixed;
+/*-- TODO: Efecto parallax */
+.fondo {
+    object-fit: cover;
+    filter: brightness(75%);
 }
 
 .content-header {
@@ -79,6 +81,7 @@ header {
 .menu {
     padding: 0px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     background: #0005;
     border: 1px solid var(--main-color);
@@ -88,8 +91,99 @@ header {
 header li {
     text-decoration: none;
     padding: 25px 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    color: #fff;
+    margin-top: 350px;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 0 var(--main-padding-sides);
+}
+
+.titulo h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.titulo h2 {
+    margin-top: 20px;
+    font-family: Roboto-Light;
+    font-size: 30px;
 }
 
 
-.elemento {
+section {
+    margin-top: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
 }
+
+section hgroup {
+    margin: 0 var(--main-padding-sides);
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+section hgroup h4 {
+    color: #000000;
+    font-family: Roboto-Light;
+    font-size: 20px;
+}
+
+section hgroup h3 {
+    font-family: Roboto-Bold;
+    font-size: 40px;
+}
+
+/** ---------- SECCIÓN 1 ---------- */
+
+.seccion-1 {
+    width: 100%;
+    text-align: center;
+}
+
+.seccion-1 hgroup {
+    text-align: left;
+}
+
+.seccion-1 [class*="imagen-"] {
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 350px;
+}
+
+.imagen-1 {
+    background-image: url("../Complements/Img/Empresa/batidora.jpg");
+}
+
+.seccion-1 .texto {
+  
+}
+
+.seccion-1 .texto h3 {
+    font-size: 30px;
+    font-size: Roboto-Bold;
+}
+
+.seccion-1 .texto p {
+    font-size: 22px;
+    padding: 25px;
+    margin-top: 35px;
+}
+
+.imagen-2 {
+    background-image: url("../Complements/Img/Empresa/cascos.jpg");
+}
+
+.imagen-3 {
+    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
+}
+
+/* ---------- SECCIÓN-2 ---------- */
