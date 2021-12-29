@@ -43,6 +43,19 @@ a {
     font-family: Roboto-light;
 }
 
+.icon {
+    height: 40px;
+}
+
+button {
+    font-family: Roboto-Light;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--main-color);
+    border: none;
+}
+
 header {
     height: 80vh;
     background-color: var(--main-color);   
@@ -66,7 +79,7 @@ header {
 }
 
 .content-header {
-    margin-top: 50px;
+    padding-top: 50px;
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -78,6 +91,11 @@ header {
     width: auto;
 }
 
+.menu-container {
+   display: flex;
+   justify-content: right;
+}
+
 .menu {
     padding: 0px;
     display: flex;
@@ -86,6 +104,7 @@ header {
     background: #0005;
     border: 1px solid var(--main-color);
     min-width: 600px;
+    max-width: 600px;
 }
 
 header li {
@@ -97,12 +116,12 @@ header li {
 
 .titulo {
     color: #fff;
-    margin-top: 350px;
+    padding-top: 350px;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     z-index: 2;
     width: 100%;
-    padding: 0 var(--main-padding-sides);
+    padding-left: var(--main-padding-sides);
 }
 
 .titulo h1 {
@@ -140,50 +159,105 @@ section hgroup h3 {
     font-size: 40px;
 }
 
-/** ---------- SECCIÓN 1 ---------- */
+/* ----- SECCIÓN-1 ----- */
 
-.seccion-1 {
-    width: 100%;
+/* TODO: un icono en cada imagen del logo editado */
+
+.trio-imagenes, .textos {
+    padding: 0px var(--main-padding-sides);
     text-align: center;
 }
 
-.seccion-1 hgroup {
-    text-align: left;
+.trio-imagenes [class*=" imagen-"]{
+    padding: 15px;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-.seccion-1 [class*="imagen-"] {
+.trio-imagenes img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 350px;
 }
 
-.imagen-1 {
-    background-image: url("../Complements/Img/Empresa/batidora.jpg");
+/* ----- SECCIÓN-2 ----- */
+
+.seccion-2 .titulos{
+    padding-top: 150px;
+    background-color: #8ccbff;
+    text-align: right;
+    justify-content: right;
 }
 
-.seccion-1 .texto {
-  
+.seccion-2 h3{
+    color: #fff;
 }
 
-.seccion-1 .texto h3 {
-    font-size: 30px;
-    font-size: Roboto-Bold;
+.seccion-2 img {
+    width: 100%;
+    padding-bottom: 150px;
+    background-color: var(--main-color);
 }
 
-.seccion-1 .texto p {
-    font-size: 22px;
+/* ----- SECCIÓN-3 ----- */
+
+.seccion-3{
+    text-align: center;
+}
+
+.seccion-3 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.seccion-3 .col-6{
+    padding-bottom: 0px;
+}
+
+.seccion-3 .imagen{
+    padding: 0px;
+}
+
+.seccion-3 h5{
+    font-size: 35px;
+    font-family: Roboto-Bold;
+    padding: 15px;
+}
+
+.seccion-3 p{
+    font-size: 24px;
     padding: 25px;
-    margin-top: 35px;
 }
 
-.imagen-2 {
-    background-image: url("../Complements/Img/Empresa/cascos.jpg");
+/* ----- FOOTER ----- */
+
+footer {
+    padding: 50px var(--main-padding-sides);
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: space-between;
 }
 
-.imagen-3 {
-    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
+footer div {
+    text-align: center;
 }
 
-/* ---------- SECCIÓN-2 ---------- */
+footer div p, button, h5{
+    margin: 10px;
+}
+
+footer h5 {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+}
+
+footer button {
+    border: 1px solid;
+    padding: 10px;
+}
+
+footer div:nth-child(3) p {
+    text-align: center;
+}

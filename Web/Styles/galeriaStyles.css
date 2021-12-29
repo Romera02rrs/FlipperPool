@@ -137,7 +137,7 @@ header li {
 
 
 section {
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -159,159 +159,73 @@ section hgroup h3 {
     font-size: 40px;
 }
 
-/** ---------- SECCIÓN 1 ---------- */
+/* ----- GALERÍA ----- */
 
-.seccion-1 {
-    width: 100%;
-    text-align: center;
-}
-
-.seccion-1 hgroup {
-    text-align: left;
-}
-
-.seccion-1 [class*="imagen-"] {
-    height: 100%;
-    object-fit: cover;
+section [class*=" imagen-"] {
+    margin: 15px;
+    background-color: #000000;
+    height: 300px;
+    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 350px;
 }
 
 .imagen-1 {
-    background-image: url("../Complements/Img/Empresa/batidora.jpg");
-}
-
-.seccion-1 .texto {
-  
-}
-
-.seccion-1 .texto h3 {
-    margin-top: 15px;
-    font-size: 30px;
-    font-size: Roboto-Bold;
-}
-
-.seccion-1 .texto p {
-    font-size: 22px;
-    padding: 25px;
-    margin-top: 35px;
-}
-
-.imagen-2 {
-    background-image: url("../Complements/Img/Empresa/cascos.jpg");
-    background-size: 150% !important;
-}
-
-.imagen-3 {
-    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
-}
-
-/* ---------- SECCIÓN-2 ---------- */
-
-.seccion-2{
-    background-color: var(--main-color);
-    height: 100vh;
-}
-
-.seccion-2 .titulos{
-    color: white;
-    text-align: right;
-    justify-content: right;
-    padding-top: 150px;
-}
-
-.seccion-2 .titulos h3{
-    color: white;
-}
-
-.seccion-2 .imagenes{
-    padding: 0px;
-}
-
-.seccion-2 .imagen-1{
-    background-image: url("../Complements/Img/GeneralUse/23.jpg");
-    width: 70vw;
-    height: 70vw;
-    background-size: 200%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-}
-
-.seccion-2 .imagen-2{
-    width: 70vw;
-    height: 70vw;
-    background-image: url("../Complements/Img/GeneralUse/43.jpg");
-    background-size: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    transform: translatex(360px) translatey(150px);
-}
-
-/* ---------- SECCIÓN-3 ---------- */
-
-.seccion-3 [class*="imagenes-mosaico-"] {
-
-    
-    height: 200px;
-    margin: 25px;
-    object-fit: cover;
-    background-size: 150%;
-    background-repeat: no-repeat;
-}
-
-.seccion-3 .imagenes-mosaico-2 {
     background-image: url("../Complements/Img/GeneralUse/10.jpg");
 }
 
-.seccion-3 .imagenes-mosaico-3 {
+.imagen-1 {
     background-image: url("../Complements/Img/GeneralUse/11.jpg");
 }
-
-.seccion-3 .imagenes-mosaico-4 {
+.imagen-2 {
+    background-image: url("../Complements/Img/GeneralUse/12.jpg");
+}
+.imagen-3 {
+    background-image: url("../Complements/Img/GeneralUse/13.jpg");
+}
+.imagen-4 {
     background-image: url("../Complements/Img/GeneralUse/14.jpg");
 }
-
-.seccion-3 .imagenes-mosaico-5 {
+.imagen-5 {
     background-image: url("../Complements/Img/GeneralUse/15.jpg");
 }
-
-.seccion-3 .imagenes-mosaico-6 {
+.imagen-6 {
     background-image: url("../Complements/Img/GeneralUse/16.jpg");
 }
-
-.seccion-3 .imagenes-mosaico-7 {
+.imagen-7 {
     background-image: url("../Complements/Img/GeneralUse/17.jpg");
 }
-
-/* ---------- SECCIÓN-4 ---------- */
-
-.seccion-4 {
-    background-color: var(--main-color);
+.imagen-8 {
+    background-image: url("../Complements/Img/GeneralUse/18.jpg");
+}
+.imagen-9 {
+    background-image: url("../Complements/Img/GeneralUse/19.jpg");
+}
+.imagen-10 {
+    background-image: url("../Complements/Img/GeneralUse/11.jpg");
+}
+.imagen-11 {
+    background-image: url("../Complements/Img/GeneralUse/12.jpg");
+}
+.imagen-12 {
+    background-image: url("../Complements/Img/GeneralUse/13.jpg");
+}
+.imagen-13 {
+    background-image: url("../Complements/Img/GeneralUse/14.jpg");
+}
+.imagen-14 {
+    background-image: url("../Complements/Img/GeneralUse/18.jpg");
+}
+.imagen-15 {
+    background-image: url("../Complements/Img/GeneralUse/20.jpg");
 }
 
-.seccion-4 .titulos {
-    color: #fff;
-    text-align: right;
-    justify-content: right;
-    padding-top: 150px;
-}
-
-.seccion-4 .titulos h3{
-    color: #fff;
-}
-
-.seccion-4 video {
-    width: 100%;
-    padding-bottom: 150px;
-}
 
 /* ----- FOOTER ----- */
 
 footer {
     padding: 50px var(--main-padding-sides);
-    /* background-color: var(--main-color); */
+    background-color: var(--main-color);
     align-items: center;
     justify-content: space-between;
 }
