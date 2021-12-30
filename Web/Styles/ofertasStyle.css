@@ -206,6 +206,10 @@ section hgroup h3 {
     text-align: center;
 }
 
+.seccion-3 hgroup{
+    text-align: left;
+}
+
 .seccion-3 img {
     width: 100%;
     height: 350px;
