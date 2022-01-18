@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://rromera.atwebpages.com/</title>
+  <link>http://rromera.atwebpages.com/</link>
+
+<item>
+     <link>http://rromera.atwebpages.com/</link>
+     <title>FlipperPool</title>
+     <description>Descripción de la web</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://rromera.atwebpages.com/empresa.html</link>
+     <title>FlipperPool | Empresa</title>
+     <description>Descripción de la web</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://rromera.atwebpages.com/galeria.html</link>
+     <title>FlipperPool | Galería</title>
+     <description>Descripción de la web</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://rromera.atwebpages.com/ofertas.html</link>
+     <title>FlipperPool | Ofertas</title>
+     <description>Descripción de la web</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://rromera.atwebpages.com/contacto.html</link>
+     <title>FlipperPool | Contacto</title>
+     <description>Descripción de la web</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
