@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../Complements/Fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../Complements/Fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../Complements/Fonts/Roboto-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: lighter;
+}
+
+:root {
+    --main-color: #8ccbff;
+
+    --main-padding-sides: 100px;
+    --second-padding-sides: 50px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto-light;
+}
+
+.icon {
+    height: 40px;
+}
+
+button {
+    font-family: Roboto-Light;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--main-color);
+    border: none;
+}
+
+header {
+    height: 80vh;
+    background-color: var(--main-color);   
+}
+
+.fondo {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/*-- TODO: Efecto parallax */
+.fondo {
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.content-header {
+    padding-top: 50px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 0 var(--main-padding-sides);
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+.menu-container {
+   display: flex;
+   justify-content: right;
+}
+
+.menu {
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: #0005;
+    border: 1px solid var(--main-color);
+    min-width: 600px;
+    max-width: 600px;
+}
+
+header li {
+    text-decoration: none;
+    padding: 25px 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    color: #fff;
+    padding-top: 350px;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-left: var(--main-padding-sides);
+}
+
+.titulo h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.titulo h2 {
+    margin-top: 20px;
+    font-family: Roboto-Light;
+    font-size: 30px;
+}
+
+
+section {
+    margin-top: 150px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+section hgroup {
+    margin: 0 var(--main-padding-sides);
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+section hgroup h4 {
+    color: #000000;
+    font-family: Roboto-Light;
+    font-size: 20px;
+}
+
+section hgroup h3 {
+    font-family: Roboto-Bold;
+    font-size: 40px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    padding: 50px var(--main-padding-sides);
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div p, button, h5{
+    margin: 10px;
+}
+
+footer h5 {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+}
+
+footer button {
+    border: 1px solid;
+    padding: 10px;
+}
+
+footer div:nth-child(3) p {
+    text-align: center;
+}
