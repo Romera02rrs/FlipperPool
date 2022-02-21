@@ -119,7 +119,7 @@ header li {
     padding-top: 350px;
     flex-direction: column;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     padding-left: var(--main-padding-sides);
 }
@@ -206,7 +206,8 @@ section hgroup h3 {
     text-align: center;
 }
 
-.seccion-3 hgroup{
+.seccion-3 hgroup
+{
     text-align: left;
 }
 

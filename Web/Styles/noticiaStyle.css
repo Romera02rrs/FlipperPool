@@ -159,163 +159,83 @@ section hgroup h3 {
     font-size: 40px;
 }
 
-/** ---------- SECCIÓN 1 ---------- */
+/* ----- SECCIÓN-1 ----- */
 
 .seccion-1 {
+    margin-bottom: 50px;
+}
+
+.imagen-oferta{
+    padding-left: var(--main-padding-sides);
+    padding-right: var(--main-padding-sides);
     width: 100%;
-    text-align: center;
+    height: 300px;
 }
 
-.seccion-1 hgroup {
-    text-align: left;
-}
-
-.seccion-1 [class*="imagen-"] {
+.imagen-oferta img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 350px;
 }
 
-.imagen-1 {
-    background-image: url("../Complements/Img/Empresa/batidora.jpg");
+.seccion-1 h4{
+    font-size: 24px;
 }
 
-.seccion-1 .texto {
-  
-}
-
-.seccion-1 .texto h3 {
+.seccion-1 p{
     margin-top: 15px;
-    font-size: 30px;
-    font-size: Roboto-Bold;
+    font-size: 20px;
 }
 
-.seccion-1 .texto p {
-    font-size: 22px;
-    padding: 25px;
-    margin-top: 35px;
+.seccion-1 .precio {
+    font-size: 34px;
 }
 
-.imagen-2 {
-    background-image: url("../Complements/Img/Empresa/cascos.jpg");
-    background-size: 150% !important;
+.seccion-1 {
+    font-size: 24px;
 }
 
-.imagen-3 {
-    background-image: url("../Complements/Img/Empresa/guinitando.jpg");
+.seccion-1 .imagen{
+    justify-content: center;
+    padding-right: var(--main-padding-sides);
 }
 
-/* ---------- SECCIÓN-2 ---------- */
-
-.seccion-2{
-    background-color: var(--main-color);
-    height: 100vh;
-}
-
-.seccion-2 .titulos{
-    color: white;
-    text-align: right;
-    justify-content: right;
-    padding-top: 150px;
-}
-
-.seccion-2 .titulos h3{
-    color: white;
-}
-
-.seccion-2 .imagenes{
-    padding: 0px;
-}
-
-.seccion-2 .imagen-1{
-    background-image: url("../Complements/Img/GeneralUse/23.jpg");
-    width: 70vw;
-    height: 70vw;
-    background-size: 200%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-}
-
-.seccion-2 .imagen-2{
-    width: 70vw;
-    height: 70vw;
-    background-image: url("../Complements/Img/GeneralUse/43.jpg");
-    background-size: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    transform: translatex(360px) translatey(150px);
-}
-
-/* ---------- SECCIÓN-3 ---------- */
-
-.seccion-3 {
-    margin-top: 650px;
-}
-
-.seccion-3 [class*="imagenes-mosaico-"] {
-
-    
-    height: 200px;
-    margin: 25px;
-    object-fit: cover;
-    background-size: 150%;
-    background-repeat: no-repeat;
-}
-
-.seccion-3 .imagenes-mosaico-2 {
-    background-image: url("../Complements/Img/GeneralUse/10.jpg");
-}
-
-.seccion-3 .imagenes-mosaico-3 {
-    background-image: url("../Complements/Img/GeneralUse/11.jpg");
-}
-
-.seccion-3 .imagenes-mosaico-4 {
-    background-image: url("../Complements/Img/GeneralUse/14.jpg");
-}
-
-.seccion-3 .imagenes-mosaico-5 {
-    background-image: url("../Complements/Img/GeneralUse/15.jpg");
-}
-
-.seccion-3 .imagenes-mosaico-6 {
-    background-image: url("../Complements/Img/GeneralUse/16.jpg");
-}
-
-.seccion-3 .imagenes-mosaico-7 {
-    background-image: url("../Complements/Img/GeneralUse/17.jpg");
-}
-
-/* ---------- SECCIÓN-4 ---------- */
-
-.seccion-4 {
-    background-color: var(--main-color);
-}
-
-.seccion-4 .titulos {
-    color: #fff;
-    text-align: right;
-    justify-content: right;
-    padding-top: 150px;
-}
-
-.seccion-4 .titulos h3{
-    color: #fff;
-}
-
-.seccion-4 video {
+.seccion-1 img{
     width: 100%;
-    padding-bottom: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion-1 .form {
+    padding-left: var(--main-padding-sides);
+}
+
+.seccion-1 .inputs {
+    margin-bottom: 50px;
+}
+
+.seccion-1 input {
+    border: none;
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 1px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.titulo-contacto{
+    margin: 35px;
+    text-align: center;
+    justify-content: center;
+    font-family: Roboto-Bold;
+    font-size: 40px;
+    color: var(--main-color);
 }
 
 /* ----- FOOTER ----- */
 
 footer {
     padding: 50px var(--main-padding-sides);
-    /* background-color: var(--main-color); */
+    background-color: var(--main-color);
     align-items: center;
     justify-content: space-between;
 }
