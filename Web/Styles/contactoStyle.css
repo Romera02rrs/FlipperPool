@@ -176,6 +176,10 @@ section hgroup h3 {
     object-fit: cover;
 }
 
+.seccion-1 .form-content {
+    flex-wrap: nowrap;
+}
+
 .seccion-1 .form {
     padding-left: var(--main-padding-sides);
 }
