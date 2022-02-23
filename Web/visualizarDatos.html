@@ -7,24 +7,28 @@
     <link href="Styles/template_grid.css" rel="stylesheet" type="text/css">
     <link href="Styles/mainStyle.css" rel="stylesheet" type="text/css">
     <link href="Styles/visualizarDatosStyle.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="Scripts/graficas.js"></script>
     <title>Visualizar Datos</title>
 </head>
 <body>
-    <div class="container-fluid contenido-global">
+    <div class="container-fluid">
         <div class="row primera-fila">
             <div class="col-6">
-                <img src="Complements/Img/Graphics/grafico-1.PNG" alt="gráfico-1">
+                <h3></h3>
+                <canvas id="line-chart" class="grafica-responsive"></canvas>
             </div>
             <div class="col-6">
-                <img src="Complements/Img/Graphics/grafico-2.PNG" alt="gráfico-2">
+                <canvas id="pie-chart" class="grafica-responsive"></canvas>
             </div>
         </div>
-        <div class="row segunda-fila">
+        <div class="row primera-fila">
             <div class="col-6">
-                <img src="Complements/Img/Graphics/grafico-3.PNG" alt="gráfico-3">
+                <canvas id="bar-chart-horizontal" class="grafica-responsive"></canvas>
+
             </div>
             <div class="col-6">
-                <img src="Complements/Img/Graphics/grafico-4.PNG" alt="gráfico-3">
+                <canvas id="radar-chart" class="grafica-responsive"></canvas>
             </div>
         </div>
     </div>
