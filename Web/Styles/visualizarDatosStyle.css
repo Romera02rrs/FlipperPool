@@ -1,23 +1,24 @@
 
-.primera-fila {
-    flex-wrap: nowrap;
-    height: 50vh;
+.fila {
+    
+
 }
 
 .grafica-responsive{
-    width: auto !important;
-    height: 100% !important;
+
+    width: 100% !important;
+}
+
+.columna {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    text-align: center;
 }
 
 .col-6 {
-    width: 100vw;
-    height: 50vh;
-    padding: 50px;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid var(--main-color);
+    
 }

@@ -11,30 +11,30 @@ function graficaLineal() {
     new Chart(document.getElementById("line-chart"), {
         type: 'line',
         data: {
-            labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
+            labels: [0, 20, 40, 60, 80, 100, 500, 1000, 1500, 2000],
             datasets: [{
                 data: [86, 114, 106, 106, 107, 111, 133, 221, 783, 2478],
-                label: "Africa",
+                label: "2018",
                 borderColor: "#3e95cd",
                 fill: false
             }, {
                 data: [282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
-                label: "Asia",
+                label: "2019",
                 borderColor: "#8e5ea2",
                 fill: false
             }, {
                 data: [168, 170, 178, 190, 203, 276, 408, 547, 675, 734],
-                label: "Europe",
+                label: "2020",
                 borderColor: "#3cba9f",
                 fill: false
             }, {
                 data: [40, 20, 10, 16, 24, 38, 74, 167, 508, 784],
-                label: "Latin America",
+                label: "2021",
                 borderColor: "#e8c3b9",
                 fill: false
             }, {
-                data: [6, 3, 2, 2, 7, 26, 82, 172, 312, 433],
-                label: "North America",
+                data: [6, 3, 2, 30, 45, 100, 120, 300, 500, 600],
+                label: "2022",
                 borderColor: "#c45850",
                 fill: false
             }
@@ -43,7 +43,7 @@ function graficaLineal() {
         options: {
             title: {
                 display: true,
-                text: 'World population per region (in millions)'
+                text: 'Número de piscinas vendidas por año'
             }
         }
     });
@@ -53,7 +53,7 @@ function graficaCircular() {
     new Chart(document.getElementById("pie-chart"), {
         type: 'pie',
         data: {
-            labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+            labels: ["2018", "2019", "2020", "2021", "2022"],
             datasets: [{
                 label: "Population (millions)",
                 backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
@@ -63,7 +63,7 @@ function graficaCircular() {
         options: {
             title: {
                 display: true,
-                text: 'Predicted world population (millions) in 2050'
+                text: 'Ganancias anuales'
             }
         }
     });
@@ -73,10 +73,10 @@ function graficaRadar() {
     new Chart(document.getElementById("radar-chart"), {
         type: 'radar',
         data: {
-            labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+            labels: ["+20", "+35", "+45", "+60", "+"],
             datasets: [
                 {
-                    label: "1950",
+                    label: "2000-2010",
                     fill: true,
                     backgroundColor: "rgba(179,181,198,0.2)",
                     borderColor: "rgba(179,181,198,1)",
@@ -84,7 +84,7 @@ function graficaRadar() {
                     pointBackgroundColor: "rgba(179,181,198,1)",
                     data: [8.77, 55.61, 21.69, 6.62, 6.82]
                 }, {
-                    label: "2050",
+                    label: "20010-2020",
                     fill: true,
                     backgroundColor: "rgba(255,99,132,0.2)",
                     borderColor: "rgba(255,99,132,1)",
@@ -98,7 +98,7 @@ function graficaRadar() {
         options: {
             title: {
                 display: true,
-                text: 'Distribution in % of world population'
+                text: 'Rango de edad preferente'
             }
         }
     });
@@ -108,7 +108,7 @@ function graficaHorizontal(){
     new Chart(document.getElementById("bar-chart-horizontal"), {
         type: 'horizontalBar',
         data: {
-          labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+          labels: ["2018", "2019", "2020", "2021", "2022"],
           datasets: [
             {
               label: "Population (millions)",
@@ -121,7 +121,7 @@ function graficaHorizontal(){
           legend: { display: false },
           title: {
             display: true,
-            text: 'Predicted world population (millions) in 2050'
+            text: 'Ganancias netas mensuales'
           }
         }
     });
