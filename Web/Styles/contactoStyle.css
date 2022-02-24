@@ -26,6 +26,14 @@
     --second-padding-sides: 50px;
 }
 
+@media only screen and (max-width: 1199px) {
+
+    textarea {
+        max-width: 200px;
+    }
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -90,6 +98,8 @@ header {
     height: 70px;
     width: auto;
 }
+
+
 
 .menu-container {
    display: flex;

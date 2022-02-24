@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <div class="container-fluid vh-100">
-        <div class="row m-0 justify-content-evenly vh-100 align-items-center">
+    <div class="container-fluid h-100 contenedor-global d-flex align-items-center">
+        <div class="row m-0 justify-content-evenly h-100 align-items-center">
             <div class="col-12 p-5 p-lg-3 m-3 mx-lg-2 col-lg-3 text-center">
-                <h2>Lista Ofertas</h2>
+                <h2 class="text-white">Lista Ofertas</h2>
                 <ul class="list-group overflow-scroll tabla border text-start mt-4">
                     <li class="list-group-item">An item</li>
                     <li class="list-group-item">A second item</li>
@@ -36,8 +36,8 @@
             </div>
             <div class="col-12 p-5 p-lg-3 m-3 mx-lg-2 col-lg-5">
 
-                <form class="row g-3 border border-2 rounded p-3">
-                    <h1 class="text-center">Nueva Entrada</h1>
+                <form class="row g-3 border border-2 rounded p-3 bg-flipperpool">
+                    <h1 class="text-center text-white">Nueva Entrada</h1>
                     <div class="d-flex justify-content-center">
                         <div class="border rounded p-3">
                             <div class="col-12">
@@ -51,24 +51,24 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <label for="tituloEntrada" class="form-label">Título de la entrada</label>
+                        <input type="text" class="form-control" id="tituloEntrada">
                     </div>
                     <div class="col-12">
                         <input type="file" class="form-control" id="inputGroupFile01">
                     </div>
                     <div class="col-12">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="contenidoEntrada" class="form-label">Contenido de la entrada</label>
+                        <textarea class="form-control" id="contenidoEntrada" rows="3"></textarea>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn bg-white border">Crear</button>
                     </div>
                 </form>
 
             </div>
             <div class="col-12 p-5 p-lg-3 m-3 mx-lg-2 col-lg-3 text-center">
-                <h2>Lista Noticias</h2>
+                <h2 class="text-white">Lista Noticias</h2>
                 <ul class="list-group overflow-scroll tabla border text-start mt-4">
                     <li class="list-group-item">An item</li>
                     <li class="list-group-item">A second item</li>

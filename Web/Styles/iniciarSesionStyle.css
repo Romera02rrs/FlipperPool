@@ -2,6 +2,14 @@
     --main-color-iniciarSesion: #79a88e;
 }
 
+@media only screen and (max-width: 1199px) {
+
+   .login-form{
+       min-width: 300px;
+   }
+}
+
+
 /* Engloba todo el contenido */
 .first-row {
     height: 100vh;

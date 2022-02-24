@@ -26,6 +26,22 @@
     --second-padding-sides: 50px;
 }
 
+@media only screen and (max-width: 1199px) {
+
+    .seccion-3 [class*="imagenes-mosaico-"] {
+        width: 85vw;
+        height: 200px;
+        margin: 25px;
+        object-fit: cover;
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+
+    .quitar-imagen {
+        display: none;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -58,7 +74,7 @@ button {
 
 header {
     height: 80vh;
-    background-color: var(--main-color);   
+    background-color: var(--main-color);
 }
 
 .fondo {
@@ -92,8 +108,8 @@ header {
 }
 
 .menu-container {
-   display: flex;
-   justify-content: right;
+    display: flex;
+    justify-content: right;
 }
 
 .menu {
@@ -182,9 +198,7 @@ section hgroup h3 {
     background-image: url("../Complements/Img/Empresa/batidora.jpg");
 }
 
-.seccion-1 .texto {
-  
-}
+.seccion-1 .texto {}
 
 .seccion-1 .texto h3 {
     margin-top: 15px;
@@ -209,27 +223,27 @@ section hgroup h3 {
 
 /* ---------- SECCIÓN-2 ---------- */
 
-.seccion-2{
+.seccion-2 {
     background-color: var(--main-color);
     height: 100vh;
 }
 
-.seccion-2 .titulos{
+.seccion-2 .titulos {
     color: white;
     text-align: right;
     justify-content: right;
     padding-top: 150px;
 }
 
-.seccion-2 .titulos h3{
+.seccion-2 .titulos h3 {
     color: white;
 }
 
-.seccion-2 .imagenes{
+.seccion-2 .imagenes {
     padding: 0px;
 }
 
-.seccion-2 .imagen-1{
+.seccion-2 .imagen-1 {
     background-image: url("../Complements/Img/GeneralUse/23.jpg");
     width: 70vw;
     height: 70vw;
@@ -239,7 +253,7 @@ section hgroup h3 {
     position: absolute;
 }
 
-.seccion-2 .imagen-2{
+.seccion-2 .imagen-2 {
     width: 70vw;
     height: 70vw;
     background-image: url("../Complements/Img/GeneralUse/43.jpg");
@@ -257,7 +271,7 @@ section hgroup h3 {
 
 .seccion-3 [class*="imagenes-mosaico-"] {
 
-    
+
     height: 200px;
     margin: 25px;
     object-fit: cover;
@@ -302,7 +316,7 @@ section hgroup h3 {
     padding-top: 150px;
 }
 
-.seccion-4 .titulos h3{
+.seccion-4 .titulos h3 {
     color: #fff;
 }
 
@@ -324,7 +338,7 @@ footer div {
     text-align: center;
 }
 
-footer div p, button, h5{
+footer div p, button, h5 {
     margin: 10px;
 }
 

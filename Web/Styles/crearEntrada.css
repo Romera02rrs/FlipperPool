@@ -1,3 +1,16 @@
+body, .contenedor-global{
+    min-height: 100vh;
+}
+
+.contenedor-global{
+    background: rgb(10,82,131);
+    background: linear-gradient(90deg, rgba(10,82,131,1) 0%, rgba(6,131,217,1) 100%);
+}
+
 .tabla{
     height: 50vh;
+}
+
+.bg-flipperpool {
+    background-color: #8ccbff;
 }
